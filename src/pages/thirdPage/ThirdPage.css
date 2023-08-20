@@ -1,0 +1,29 @@
+
+
+.myinvisible img{
+    filter: brightness(1);
+    transition: all 1000ms;
+
+
+}
+
+.myvisible img{
+    filter: brightness(0.4);
+    transition: all 1000ms;
+
+}
+
+.myinvisible div{
+    opacity: 0;
+    transition: opacity 600ms;
+
+
+
+}
+
+.myvisible div{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 600ms;
+}
+
