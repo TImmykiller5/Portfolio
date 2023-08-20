@@ -27,3 +27,18 @@
     transition: opacity 600ms;
 }
 
+.myinvisible a{
+    display: none;
+    width: 0;
+    overflow: hidden;
+    transition: all 400ms;
+
+}
+
+.myvisible a{
+    
+    display: block;
+    width: auto;
+    transition: all 400ms;
+}
+

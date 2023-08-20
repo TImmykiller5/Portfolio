@@ -4,7 +4,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-
 function FirstPage() {
   const [open, setOpen] = useState(false);
   const setControl = () => {
@@ -22,10 +21,35 @@ function FirstPage() {
             </button>
           </div>
         </div>
-        <div className={`w-full ${open? 'h-fit' : 'h-0 hidden'} flex flex-col items-center justify-center`}>
-          <HashLink smooth to={'/#about-me'}>About me</HashLink>
-          <HashLink smooth to={'/#projects'}>Projects</HashLink>
-          <HashLink smooth to={'/#contact'}>Hire me</HashLink>
+        <div
+          className={`w-full ${
+            open ? "h-fit" : "h-0 hidden"
+          } mt-6 gap-4 flex flex-col items-center justify-center`}
+        >
+          <HashLink
+            className="border w-24 text-center rounded-lg px-2 py-1 hover:text-white hover:bg-purple-400 transition-all  border-purple-400"
+            onClick={setControl}
+            smooth
+            to={"/#about-me"}
+          >
+            About me
+          </HashLink>
+          <HashLink
+            className="border w-24 text-center rounded-lg px-2 py-1 hover:text-white hover:bg-orange-400 transition-all  border-orange-400"
+            onClick={setControl}
+            smooth
+            to={"/#projects"}
+          >
+            Projects
+          </HashLink>
+          <HashLink
+            className="border w-24 text-center rounded-lg px-2 py-1 hover:text-white hover:bg-cyan-400 transition-all border-cyan-400"
+            onClick={setControl}
+            smooth
+            to={"/#contact"}
+          >
+            Hire me
+          </HashLink>
         </div>
       </div>
 
