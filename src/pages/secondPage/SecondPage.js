@@ -22,18 +22,21 @@ function SecondPage() {
     <div className="">
       <div className=" relative  ">
         <div className=" bg-orange-400 text-zinc-900 px-10 sm:px-12  lg:px-40 text-center pt-16 pb-80">
-          <div id="about-me" className=" text-2xl sm:text-4xl pb-6 font-extrabold">
+          <div
+            id="about-me"
+            className=" text-2xl sm:text-4xl pb-6 font-extrabold"
+          >
             Hi, I'm Timmy, Nice to meet you.
           </div>
           <div className=" sm:text-xl text-base  sm:leading-8 font-medium">
-            Venturing into the realm of web development 18 months ago, I've
-            dived into the world of personal projects, absorbing invaluable
-            insights from hands-on experience. While my journey doesn't boast
-            professional collaborations yet, my quiet confidence and unyielding
-            curiosity drive me. I'm dedicated to advancing my skills, taking on
-            coding challenges with each project, and eagerly embracing every
-            chance for growth as I set my sights on an entry-level developer
-            role.
+            Embarking on the path of web development, I've immersed myself in
+            the realm of personal projects, gaining precious insights through
+            practical engagement. Although I haven't yet had the opportunity for
+            professional collaborations, I carry a sense of assuredness along
+            with an unwavering curiosity. My commitment lies in the continuous
+            enhancement of my skills, as I willingly embrace coding challenges
+            with each new project. Every chance for growth is met with
+            enthusiasm as I set my sights on an entry-level developer role.
           </div>
         </div>
         <div
@@ -47,14 +50,18 @@ function SecondPage() {
             <div className="flex h-full  flex-col shadow-md  lg:border-r border-b border-gray-800 text-center items-center gap-12 px-10 sm:w-11/12 bg-black py-6 pt-10 rounded-t-3xl  lg:rounded-tr-none lg:rounded-l-3xl ">
               <div className="flex flex-col gap-6  items-center">
                 <div className=" w-fit p-2 rounded-full bg-lime-500">
-                  <img alt="frontend logo" className=" sm:w-16 w-10" src="/images/back.svg" />
+                  <img
+                    alt="frontend logo"
+                    className=" sm:w-16 w-10"
+                    src="/images/back.svg"
+                  />
                 </div>
                 <span className=" sm:text-2xl font-bold">
                   Frontend Developer
                 </span>
                 <span className=" sm:text-lg">
-                  I enjoy creating backend solutions by writing code that turns
-                  ideas into functional components.
+                  I find joy in designing frontend solutions, using code to
+                  transform ideas into functional components.
                 </span>
               </div>
               <div className=" sm:text-lg flex flex-col gap-2 sm:gap-4">
@@ -78,7 +85,11 @@ function SecondPage() {
             <div className="flex h-full flex-col text-center items-center gap-12 px-10 sm:w-11/12 bg-black py-6 pt-10 rounded-b-3xl  lg:rounded-bl-none  lg:rounded-r-3xl ">
               <div className="flex flex-col gap-6  items-center">
                 <div className=" w-fit p-2 rounded-full bg-lime-500">
-                  <img alt="backend logo" className=" sm:w-16 w-10" src="/images/front.svg" />
+                  <img
+                    alt="backend logo"
+                    className=" sm:w-16 w-10"
+                    src="/images/front.svg"
+                  />
                 </div>
                 <span className=" sm:text-2xl font-bold">
                   Backend Developer

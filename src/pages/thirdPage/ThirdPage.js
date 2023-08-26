@@ -43,13 +43,13 @@ function ThirdPage() {
             style={{ top: "0%", left: "0%" }}
             className="h-full w-full  absolute flex items-center justify-center gap-4"
           >
-            <a target="_blank" href="https://github.com/TImmykiller5/blog.git">
+            <a target="_blank" rel="noreferrer" href="https://github.com/TImmykiller5/blog.git">
               Code{" "}
               <span>
                 <FontAwesomeIcon icon={faGithub} />
               </span>
             </a>
-            <a target="_blank" href="https://blog-j0ho.onrender.com/">
+            <a target="_blank" rel="noreferrer" href="https://blog-j0ho.onrender.com/">
               Live Demo{" "}
               <span>
                 <FontAwesomeIcon icon={faLink} />
@@ -98,8 +98,7 @@ function ThirdPage() {
           id="Demo2"
           onMouseEnter={() => revealer("Demo2")}
           onMouseLeave={() => hider("Demo2")}
-          onTouchStart={() => revealer("Demo2")}
-          onTouchEnd={() => hider("Demo2")}
+          
         >
           <img
             alt="website preview"
@@ -110,13 +109,13 @@ function ThirdPage() {
             style={{ top: "0%", left: "0%" }}
             className="h-full w-full  absolute flex items-center justify-center gap-4"
           >
-            <a href="/">
+            <a target="_blank" rel="noreferrer" href="https://github.com/TImmykiller5/fullstackStore">
               Code{" "}
               <span>
                 <FontAwesomeIcon icon={faGithub} />
               </span>
             </a>
-            <a href="/">
+            <a target="_blank" rel="noreferrer" href="https://tshop-tuyg.onrender.com/" >
               Live Demo{" "}
               <span>
                 <FontAwesomeIcon icon={faLink} />
@@ -162,8 +161,7 @@ function ThirdPage() {
           id="Demo3"
           onMouseEnter={() => revealer("Demo3")}
           onMouseLeave={() => hider("Demo3")}
-          onTouchStart={() => revealer("Demo3")}
-          onTouchEnd={() => hider("Demo3")}
+          
         >
           <img
             alt="website preview"
@@ -174,13 +172,13 @@ function ThirdPage() {
             style={{ top: "0%", left: "0%" }}
             className="h-full w-full  absolute flex items-center justify-center gap-4"
           >
-            <a target="_blank" href="https://github.com/TImmykiller5/Capax-Copy.git">
+            <a target="_blank" rel="noreferrer" href="https://github.com/TImmykiller5/Capax-Copy.git">
               Code{" "}
               <span>
                 <FontAwesomeIcon icon={faGithub} />
               </span>
             </a>
-            <a target="_blank" href="https://capax-fidum.onrender.com/">
+            <a target="_blank" rel="noreferrer" href="https://capax-fidum.onrender.com/">
               Live Demo{" "}
               <span>
                 <FontAwesomeIcon icon={faLink} />
@@ -226,8 +224,7 @@ function ThirdPage() {
           id="Demo4"
           onMouseEnter={() => revealer("Demo4")}
           onMouseLeave={() => hider("Demo4")}
-          onTouchStart={() => revealer("Demo4")}
-          onTouchEnd={() => hider("Demo4")}
+          
         >
           <img
             alt="website preview"
@@ -244,7 +241,7 @@ function ThirdPage() {
                 <FontAwesomeIcon icon={faGithub} />
               </span>
             </a>
-            <a target="_blank" href="https://github.com/TImmykiller5/Portfolio.git">
+            <a target="_blank" rel="noreferrer" href="https://github.com/TImmykiller5/Portfolio.git">
               Live Demo{" "}
               <span>
                 <FontAwesomeIcon icon={faLink} />
