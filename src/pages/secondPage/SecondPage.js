@@ -68,16 +68,16 @@ function SecondPage() {
                 <span className="  text-purple-300 sm:font-bold">
                   Languages I Speak:
                 </span>
-                <span>HTML, CSS, Javascript, Git</span>
+                <span>HTML, CSS, Javascript, TypeScript</span>
               </div>
               <div className="sm:text-lg  flex flex-col gap-1 sm:gap-2">
                 <span className=" text-purple-300 sm:font-bold">
                   Dev Tools:
                 </span>
                 <span>React</span>
-                <span>GitHub</span>
-                <span>Terminal</span>
-                <span>Bootstrap</span>
+                <span>NextJs</span>
+                <span>TypeScript</span>
+                <span>PrismaDB</span>
                 <span>Tailwind</span>
                 <span>VSCode</span>
               </div>
@@ -111,8 +111,8 @@ function SecondPage() {
                 </span>
                 <span>Django</span>
                 <span>GitHub</span>
-                <span>Terminal</span>
-                <span>Simple JWT</span>
+                <span>TypeScript</span>
+                <span>NextJs</span>
                 <span>Django Rest Framework</span>
               </div>
             </div>
