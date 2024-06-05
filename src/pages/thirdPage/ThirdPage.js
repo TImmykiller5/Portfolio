@@ -133,7 +133,7 @@ function ThirdPage() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="store-admin-cso20jcyl-timmykiller5s-projects.vercel.app"
+              href="https://store-admin-cso20jcyl-timmykiller5s-projects.vercel.app"
             >
               Live Demo{" "}
               <span>
