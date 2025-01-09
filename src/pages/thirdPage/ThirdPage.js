@@ -56,7 +56,7 @@ function ThirdPage() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://store-client-3q9ji5nsl-timmykiller5s-projects.vercel.app/"
+              href="https://store-client-livid.vercel.app/"
             >
               Live Demo{" "}
               <span>
@@ -133,7 +133,7 @@ function ThirdPage() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://store-admin-cso20jcyl-timmykiller5s-projects.vercel.app"
+              href="https://store-admin-nine-xi.vercel.app/"
             >
               Live Demo{" "}
               <span>
