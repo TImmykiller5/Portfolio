@@ -3,6 +3,7 @@ import "./ThirdPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import clsx from "clsx";
 
 function ThirdPage() {
   const revealer = (e) => {
@@ -19,6 +20,56 @@ function ThirdPage() {
     ele.classList.toggle("myinvisible");
   };
 
+  const projects = [
+    {
+      title: "Fluttersuite",
+      description: `Fluttersuite is an AI-powered business management tool where users can build a website, manage a CRM, and track invoices, campaigns, and customer data. It allows users to automate and streamline their operations for enhanced productivity.`,
+      techStack: ["React", "Next.js", "OpenAI", "Tailwind CSS", "Node.js"],
+      liveDemo: "https://www.fluttersuite.com",
+      image: "/images/fluttersuite.png"
+    },
+    {
+      title: "Ecommerce Store",
+      description: `A dynamic e-commerce store developed using Next.js on both the frontend and backend, hosted on Vercel. It offers server-side rendering, static site generation, and real-time updates on product availability and user orders. Customers can browse products, make purchases, and track their orders effortlessly.`,
+      techStack: ["React", "NextJs", "TypeScript", "Tailwind CSS"],
+      codeLink: "https://github.com/TImmykiller5/StoreClient.git",
+      liveDemo: "https://store-client-livid.vercel.app/",
+      image: "/images/ecommerceStore.png",
+    },
+    {
+      title: "Ecommerce Store Admin",
+      description: `A comprehensive admin site developed using Next.js, hosted on Vercel, providing a robust platform for managing an e-commerce store. It uses API routes and PrismaDB ORM connected to a PostgreSQL database hosted on Supabase. Administrators can oversee products, manage orders, and track customer data in real-time.`,
+      techStack: ["React", "NextJs", "TypeScript", "PrismaDB"],
+      codeLink: "https://github.com/TImmykiller5/StoreAdmin.git",
+      liveDemo: "https://store-admin-nine-xi.vercel.app/",
+      image: "/images/ecommerceAdmin.png",
+    },
+    {
+      title: "Blog Site",
+      description: `A dynamic website combining Django and React to provide a platform where users can explore engaging blog posts. This project offers a seamless user experience to access insightful content.`,
+      techStack: ["React", "Django", "CSS", "Tailwind CSS"],
+      codeLink: "https://github.com/TImmykiller5/blog.git",
+      liveDemo: "https://blog-j0ho.onrender.com/",
+      image: "/images/blog.png",
+    },
+    {
+      title: "T-Shop Online Store",
+      description: `T-Shop is an online store created using Django and React. It features a user login system and a cart for customers to explore, add products, and check out effortlessly.`,
+      techStack: ["React", "Django", "Bootstrap"],
+      codeLink: "https://github.com/TImmykiller5/fullstackStore",
+      liveDemo: "https://tshop-tuyg.onrender.com/",
+      image: "/images/tshop.png",
+    },
+    {
+      title: "Capax Site",
+      description: `A clone of the Capax website, providing a responsive and visually appealing design. It showcases the use of modern web development practices and techniques.`,
+      techStack: ["React", "CSS", "JavaScript"],
+      codeLink: "https://github.com/TImmykiller5/Capax-Copy.git",
+      liveDemo: "https://capax-clone.vercel.app/",
+      image: "/images/capax.png",
+    },
+  ];
+
   return (
     <div id="projects" className="flex mt-20 flex-col lg:gap-16  gap-10">
       <div
@@ -27,7 +78,7 @@ function ThirdPage() {
       >
         Projects
       </div>
-      <div className="text-center lg:py-8 lg:px-6 pb-8 flex flex-col lg:flex-row lg:gap-6 lg:justify-around items-center gap-6 bg-neutral-950  rounded-2xl md:mx-20 lg:mx-28 mx-10 xl:mx-60">
+      {/* <div className="text-center lg:py-8 lg:px-6 pb-8 flex flex-col lg:flex-row lg:gap-6 lg:justify-around items-center gap-6 bg-neutral-950  rounded-2xl md:mx-20 lg:mx-28 mx-10 xl:mx-60">
         <div
           id="Demo5"
           onMouseEnter={() => revealer("Demo5")}
@@ -396,71 +447,79 @@ function ThirdPage() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="text-center lg:py-8 lg:px-6 pb-8 flex flex-col lg:flex-row-reverse lg:gap-6 lg:justify-around items-center gap-6 bg-neutral-950  rounded-2xl md:mx-20 lg:mx-28 mx-10 xl:mx-60">
-        <div
-          className="lg:w-1/2 lg:flex lg:justify-center relative lg:mx-0 lg:my-0 mx-8 my-6 sm:mx-10 sm:my-8  myinvisible"
-          id="Demo4"
-          onMouseEnter={() => revealer("Demo4")}
-          onMouseLeave={() => hider("Demo4")}
-        >
-          <img
-            alt="website preview"
-            className="rounded-xl lg:w-full shadow-lg shadow-neutral-900 w-full"
-            src="/images/portfolio.png"
-          />
-          <div
-            style={{ top: "0%", left: "0%" }}
-            className="h-full w-full  absolute flex items-center justify-center gap-4"
-          >
-            <a href="/">
-              Code{" "}
-              <span>
-                <FontAwesomeIcon icon={faGithub} />
-              </span>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/TImmykiller5/Portfolio.git"
+      </div> */}
+      {projects.map((project, index) => {
+        const abs = index % 2;
+        console.log(abs);
+        return (
+          <div key={index} className={clsx("text-center lg:py-8 lg:px-6 pb-8 flex flex-col lg:flex-row  lg:gap-6 lg:justify-around items-center gap-6 bg-neutral-950  rounded-2xl md:mx-20 lg:mx-28 mx-10 xl:mx-60", {
+            "!flex-row-reverse": abs === 1,
+            "lg:flex-row": abs === 0
+          })}>
+            <div
+              className="lg:w-1/2 lg:flex lg:justify-center relative lg:mx-0 lg:my-0 mx-8 my-6 sm:mx-10 sm:my-8  myinvisible"
+              id={`Demo${index + 1}`}
+              onMouseEnter={() => revealer(`Demo${index + 1}`)}
+              onMouseLeave={() => hider(`Demo${index + 1}`)}
             >
-              Live Demo{" "}
-              <span>
-                <FontAwesomeIcon icon={faLink} />
-              </span>{" "}
-            </a>
-          </div>
-        </div>
+              <img
+                alt="website preview"
+                className="rounded-xl lg:w-full shadow-lg shadow-neutral-900 w-full"
+                src={project.image}
+              />
+              <div
+                style={{ top: "0%", left: "0%" }}
+                className="h-full w-full  absolute flex items-center justify-center gap-4"
+              >
+                { project.codeLink && <a href={project.codeLink}>
+                  Code{" "}
+                  <span>
+                    <FontAwesomeIcon icon={faGithub} />
+                  </span>
+                </a>}
+                { project.liveDemo && <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={project.liveDemo}
+                >
+                  Live Demo{" "}
+                  <span>
+                    <FontAwesomeIcon icon={faLink} />
+                  </span>{" "}
+                </a>}
+              </div>
+            </div>
 
-        <div className="flex flex-col items-center lg:max-w-lg lg:items-center lg:justify-center gap-4 px-4 lg:px-0 lg:w-1/2 sm:px-20">
-          <button
-            onClick={() => {
-              hider("Demo4");
-            }}
-            className="w-fit text-lg  text-purple-300 sm:font-bold font-semibold"
-          >
-            This Portfolio Page
-          </button>
-          <div className="text-sm sm:text-lg">
-            {" "}
-            Welcome to my digital showcase, where creativity and technology
-            converge. Explore a collection of my transformative projects. This
-            platform is a testament to my dedication to merging design and
-            innovation, crafting immersive user experiences that resonate. Join
-            me in this journey where each pixel tells a story of collaboration,
-            craftsmanship, and digital evolution.
-          </div>
-          <div className="flex items-center gap-6 w-full wrap justify-center">
-            <div className="bg-neutral-700 px-3 py-1 rounded-lg shadow shadow-neutral-700">
-              React
+            <div className="flex flex-col items-center lg:max-w-lg lg:items-center lg:justify-center gap-4 px-4 lg:px-0 lg:w-1/2 sm:px-20">
+              <button
+                onClick={() => {
+                  hider(`Demo${index + 1}`);
+                }}
+                className="w-fit text-lg  text-purple-300 sm:font-bold font-semibold"
+              >
+                {project.title}
+              </button>
+              <div className="text-sm sm:text-lg">
+                {" "}
+                {project.description}
+              </div>
+              <div className="flex items-center gap-6 w-full wrap justify-center">
+                {project.techStack.map((tag, index) => (
+                  <div key={index} className="bg-neutral-700 px-3 whitespace-nowrap py-1 rounded-lg shadow shadow-neutral-700">
+                  {tag}
+                </div>
+                ))}
+                {/* <div className="bg-neutral-700 px-3 py-1 rounded-lg shadow shadow-neutral-700">
+                  React
+                </div>
+                <div className="bg-neutral-700 px-3 py-1 rounded-lg shadow shadow-neutral-700">
+                  Tailwind CSS
+                </div> */}
+              </div>
             </div>
-            {/* <div className="bg-neutral-700 px-3 py-1 rounded-lg shadow shadow-neutral-700">Django</div> */}
-            <div className="bg-neutral-700 px-3 py-1 rounded-lg shadow shadow-neutral-700">
-              Tailwind CSS
-            </div>
           </div>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 }
